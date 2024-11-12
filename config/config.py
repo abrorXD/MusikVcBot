@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv(" -1001660410430", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001660410430"))
 
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("SpotifyMusicBot")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("1663753069", "").split())
+    map(int, getenv("OENER_ID", "1663753069").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
